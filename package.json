@@ -1,0 +1,7 @@
+{
+  "name": "tinker-template",
+  "description": "A template for frontend tinkering",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true
+}
