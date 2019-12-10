@@ -1,7 +1,17 @@
 {
-  "name": "tinker-template",
-  "description": "A template for frontend tinkering",
-  "version": "0.0.0",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "normalize.css": "^8.0.1",
+    "now": "^16.6.3",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.19.1",
+    "stylus": "^0.54.7",
+    "typescript": "^3.7.3"
+  },
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "deploy": "yarn build && now dist",
+    "dev": "parcel src/index.html"
+  }
 }
