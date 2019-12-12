@@ -12,6 +12,6 @@
   "scripts": {
     "build": "parcel build -d public src/index.html",
     "deploy": "now",
-    "dev": "parcel src/index.html"
+    "dev": "parcel -d public src/index.html"
   }
 }
