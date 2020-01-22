@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
-    "module": "commonjs",
+    "module": "ES6",
     "noEmit": true,
     "strict": true,
-    "target": "es5",
+    "target": "es6",
     "forceConsistentCasingInFileNames": true,
-    "lib": ["dom", "es6"]
+    "lib": ["dom", "es6"],
+    "jsx": "preserve"
   }
 }
