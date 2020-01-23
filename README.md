@@ -1,6 +1,6 @@
-# Tinker Template
+# React Tinker Template
 
-This repository is a template for tinkering with frontend projects. It uses [Parcel](https://parceljs.org) to easily bundle up frontend assets that can be deployed to [Zeit](https://zeit.co) for sharing.
+This repository is a template for tinkering with React projects. It uses [Parcel](https://parceljs.org) to easily bundle up frontend assets that can be deployed to [Zeit](https://zeit.co) for sharing.
 
 It makes use of:
 
