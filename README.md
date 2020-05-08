@@ -11,13 +11,13 @@ It makes use of:
 ## Use
 
 1. Clone: `git clone https://github.com/jclem/tinker.git` and `cd` into `./tinker`
-1. Install dependencies: `yarn`
+1. Install dependencies: `npm install`
 1. Tinker! Edit `src/index.html`, `src/js/index.ts`, and `src/css/index.styl`.
 
 ## Scripts
 
 A number of scripts are in [package.json](package.json) for developing, building, and deploying:
 
-- `yarn dev` This starts a Parcel development server (with live reload, etc.)
-- `yarn build` This simply builds to the "public" directory (which is .gitignore-ed)
-- `yarn deploy` This deploys the project Zeit
+- `npm run dev` This starts a Parcel development server (with live reload, etc.)
+- `npm run build` This simply builds to the "public" directory (which is .gitignore-ed)
+- `npm run deploy` This deploys the project Zeit
