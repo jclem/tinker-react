@@ -1,0 +1,19 @@
+root: true
+parser: '@typescript-eslint/parser'
+plugins: ['@typescript-eslint']
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - prettier/@typescript-eslint
+  - prettier/react
+  - plugin:react/recommended
+  - plugin:react-hooks/recommended
+overrides:
+  - files: ['*.js']
+    env: {node: true}
+    rules:
+      '@typescript-eslint/no-var-requires': off
+  - files: ['*.tsx']
+    rules:
+      '@typescript-eslint/explicit-module-boundary-types': off

@@ -1,26 +1,47 @@
 {
-  "license": "MIT",
-  "private": true,
-  "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@types/react": "^16.9.19",
-    "@types/react-dom": "^16.9.5",
-    "@types/styled-jsx": "^2.2.8",
-    "normalize.css": "^8.0.1",
-    "now": "^19.0.0",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^2.0.5",
-    "styled-jsx": "^3.2.4",
-    "stylus": "^0.54.7",
-    "typescript": "^3.7.3"
-  },
-  "scripts": {
-    "build": "parcel build -d public src/index.html",
-    "deploy": "now",
-    "dev": "parcel -d public src/index.html"
-  },
   "dependencies": {
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "tailwind": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/styled-jsx": "^2.2.8",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-react": "^7.21.2",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "husky": "^4.3.0",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "open-color": "^1.7.0",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^8.1.1",
+    "prettier": "^2.1.2",
+    "styled-jsx": "^3.3.0",
+    "styled-jsx-plugin-postcss": "^3.0.1",
+    "tailwindcss": "^1.8.10",
+    "typescript": "^4.0.3",
+    "vercel": "^20.1.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run check"
+    }
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "parcel build -d public src/index.html",
+    "check": "run-p --aggregate-output --continue-on-error check:format check:lint",
+    "check:format": "prettier --check src/*",
+    "check:lint": "eslint src",
+    "deploy": "vercel",
+    "dev": "parcel -d public src/index.html"
   }
 }

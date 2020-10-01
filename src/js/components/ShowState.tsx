@@ -3,6 +3,7 @@ import {StateContext} from '../state'
 
 export default function ShowState() {
   const {state, dispatch} = useContext(StateContext)
+
   return (
     <div>
       <p>State value: {state.value}</p>

@@ -25,4 +25,4 @@ export function reducer(state: State, action: Action): State {
 export const StateContext = React.createContext<{
   dispatch: React.Dispatch<Action>
   state: State
-}>(null as any)
+}>(null as any) // eslint-disable-line @typescript-eslint/no-explicit-any

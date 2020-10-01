@@ -8,15 +8,8 @@ export default function App() {
   return (
     <div className="App">
       <StateContext.Provider value={{state, dispatch}}>
-        <h1>Hello, world.</h1>
-
+        <h1 className="text-blue-800 text-xl">Hello, world.</h1>
         <ShowState />
-
-        <style jsx>{`
-          h1 {
-            color: blue;
-          }
-        `}</style>
       </StateContext.Provider>
     </div>
   )

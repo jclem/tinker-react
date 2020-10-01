@@ -4,9 +4,9 @@
     "module": "ES6",
     "noEmit": true,
     "strict": true,
-    "target": "es6",
+    "target": "ES2020",
     "forceConsistentCasingInFileNames": true,
-    "lib": ["dom", "es6"],
+    "lib": ["DOM", "ES2020"],
     "jsx": "preserve"
   }
 }
