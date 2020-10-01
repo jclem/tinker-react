@@ -1,7 +1,7 @@
 const openColor = require('open-color')
 
 module.exports = {
-  purge: ['src/**/*.postcss', 'src/**/*.js', 'src/**/*.html'],
+  purge: ['src/**/*'],
   theme: {
     extend: {
       colors: () => {
